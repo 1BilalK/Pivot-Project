@@ -1,0 +1,85 @@
+
+body, ul {
+    width: 75%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkgrey;
+    border-style: solid ;
+    border: 1px solid white;
+    text-align: center;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Flexbox styles */
+.flex-container {
+    .flex-container{
+        padding: 10px;
+    }
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+}
+
+main{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1px;
+
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+}
